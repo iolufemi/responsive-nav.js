@@ -1,45 +1,4 @@
 /* ------------------------------------------
-  NECESSARY STYLES FOR RESPONSIVE NAV
---------------------------------------------- */
-
-.nav-collapse ul {
-  margin: 0;
-  padding: 0;
-  width: 100%;
-  display: block;
-  list-style: none;
-}
-
-.nav-collapse li {
-  width: 100%;
-  display: block;
-}
-
-.js .nav-collapse {
-  clip: rect(0 0 0 0);
-  max-height: 0;
-  position: absolute;
-  display: block;
-  overflow: hidden;
-  zoom: 1;
-}
-
-.nav-collapse.opened {
-  max-height: 9999px;
-}
-
-@media screen and (min-width: 40em) {
-  .js .nav-collapse {
-    position: relative;
-    max-height: none;
-  }
-  .nav-toggle {
-    display: none;
-  }
-}
-
-
-/* ------------------------------------------
   DEMO PAGE'S STYLES
 --------------------------------------------- */
 body, div,
@@ -108,6 +67,10 @@ body {
   border-bottom: 1px solid white;
   padding: 0.7em 1em;
   float: left;
+}
+
+.nav-collapse .alt a {
+  background: #555;
 }
 
 @media screen and (min-width: 40em) {

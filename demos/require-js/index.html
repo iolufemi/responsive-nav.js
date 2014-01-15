@@ -1,11 +1,15 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="no-js">
   <head>
     <meta charset="utf-8">
-    <title>Responsive Nav &middot; Open Navigation Below Demo</title>
+    <title>Responsive Nav &middot; Require.js Demo</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <link rel="stylesheet" href="../../responsive-nav.css">
-    <script src="../../responsive-nav.js"></script>
+    <script>
+      var doc = document, docEl = doc.documentElement;
+      docEl.className = docEl.className.replace(/(^|\s)no-js(\s|$)/, " js ");
+    </script>
+    <script data-main="main" src="require.js"></script>
   </head>
   <body>
 
@@ -17,12 +21,5 @@
         <li><a href="#">Blog</a></li>
       </ul>
     </nav>
-
-    <script>
-      var navigation = responsiveNav(".nav-collapse", {
-        insert: "before"
-      });
-    </script>
-
   </body>
 </html>
